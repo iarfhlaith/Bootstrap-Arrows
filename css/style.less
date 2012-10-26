@@ -1,0 +1,125 @@
+
+/* Bootstrap Arrows
+ --------------------------------------------*/
+[class^="arrow-"],
+[class*=" arrow-"] {
+  display: inline-block;
+  width: 39px;
+  height: 56px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../img/arrows.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+}
+// Arrow Variables
+@arrowYUp:         -44px;
+@arrowYDown:      -101px;
+
+@arrowXDefault:     -6px;
+@arrowXPrimary:    -91px;
+@arrowXInfo:      -176px;
+@arrowXSuccess:   -261px;
+@arrowXWarning:   -345px;
+@arrowXDanger:    -430px;
+@arrowXInverse:   -515px;
+
+// Arrow Mixins
+.arrow (@x, @y) {
+  background-position: @x @y;
+}
+.arrow-large (@x, @y, @diffY:36) {
+  height: 91px;
+  width:  46px;
+  background-position: (@x - 39) (@y + @diffY);
+}
+
+// Arrows
+.arrow-up-default {
+  .arrow(@arrowXDefault,  @arrowYUp);
+}
+.arrow-up-primary {
+  .arrow(@arrowXPrimary,  @arrowYUp);
+}
+.arrow-up-info {
+  .arrow(@arrowXInfo,     @arrowYUp);
+}
+.arrow-up-success {
+  .arrow(@arrowXSuccess,  @arrowYUp);
+}
+.arrow-up-warning {
+  .arrow(@arrowXWarning,  @arrowYUp);
+}
+.arrow-up-danger {
+  .arrow(@arrowXDanger,   @arrowYUp);
+}
+.arrow-up-inverse {
+  .arrow(@arrowXInverse,  @arrowYUp);
+}
+.arrow-down-default {
+  .arrow(@arrowXDefault,  @arrowYDown);
+}
+.arrow-down-primary {
+  .arrow(@arrowXPrimary,  @arrowYDown);
+}
+.arrow-down-info {
+  .arrow(@arrowXInfo,     @arrowYDown);
+}
+.arrow-down-success {
+  .arrow(@arrowXSuccess,  @arrowYDown);
+}
+.arrow-down-warning {
+  .arrow(@arrowXWarning,  @arrowYDown);
+}
+.arrow-down-danger {
+  .arrow(@arrowXDanger,   @arrowYDown);
+}
+.arrow-down-inverse {
+  .arrow(@arrowXInverse,  @arrowYDown);
+}
+
+// Arrows (Large)
+.arrow-up-default-large {
+  .arrow-large(@arrowXDefault,  @arrowYUp);
+}
+.arrow-up-primary-large {
+  .arrow-large(@arrowXPrimary,  @arrowYUp);
+}
+.arrow-up-info-large {
+  .arrow-large(@arrowXInfo,     @arrowYUp);
+}
+.arrow-up-success-large {
+  .arrow-large(@arrowXSuccess,  @arrowYUp);
+}
+.arrow-up-warning-large {
+  .arrow-large(@arrowXWarning,  @arrowYUp);
+}
+.arrow-up-danger-large {
+  .arrow-large(@arrowXDanger,   @arrowYUp);
+}
+.arrow-up-inverse-large {
+  .arrow-large(@arrowXInverse,  @arrowYUp);
+}
+.arrow-down-default-large {
+  .arrow-large(@arrowXDefault,  @arrowYDown, 0);
+}
+.arrow-down-primary-large {
+  .arrow-large(@arrowXPrimary,  @arrowYDown, 0);
+}
+.arrow-down-info-large {
+  .arrow-large(@arrowXInfo,     @arrowYDown, 0);
+}
+.arrow-down-success-large {
+  .arrow-large(@arrowXSuccess,  @arrowYDown, 0);
+}
+.arrow-down-warning-large {
+  .arrow-large(@arrowXWarning,  @arrowYDown, 0);
+}
+.arrow-down-danger-large {
+  .arrow-large(@arrowXDanger,   @arrowYDown, 0);
+}
+.arrow-down-inverse-large {
+  .arrow-large(@arrowXInverse,  @arrowYDown, 0);
+}
