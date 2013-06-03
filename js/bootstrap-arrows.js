@@ -25,7 +25,7 @@
 
       var $this = $(this);
 	  
-	  var angle = $this.attr('rel');
+	  var angle = $this.data('angle');
 	  
 	  $this.css('-webkit-transform','rotate('+angle+'deg)');
 	  $this.css('-moz-transform','rotate('+angle+'deg)');
